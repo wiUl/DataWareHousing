@@ -1,0 +1,2 @@
+média de pessoas por familia(somente cadastrados em bolsa familia visto que outros auxilios sao individuais)
+select avg(b.Qtd_Dependentes + 1) from Pagamento p inner join Beneficiario b on b.NIS = p.NIS where p.tipo_auxilio = 'Bolsa Familia';
