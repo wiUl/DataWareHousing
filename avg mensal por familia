@@ -1,0 +1,5 @@
+Média de renda mensal por familia
+select avg(pgto.renda) from  
+(select sum(p.Valor) as renda, p.NIS, p.mes, p.ano  from Pagamento p 
+group by p.NIS, p.mes, p.ano) as pgto inner join
+Beneficiario b on pgto.NIS = b.NIS order by mes,ano;
