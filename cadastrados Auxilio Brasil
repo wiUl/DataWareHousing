@@ -1,0 +1,2 @@
+total de cadastrados contemplados pelo Auxilio brasil
+select count(DISTINCT NIS) from Pagamento p where p.tipo_auxilio ='Auxilio Brasil';
