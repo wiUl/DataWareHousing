@@ -1,0 +1,3 @@
+total de dependentes de cadastrados contemplados pelo bolsa familia
+select sum(mean.media) from (select avg(b.Qtd_Dependentes + 1) as media from (select * from Pagamento p where p.tipo_auxilio ='Bolsa Familia') as pgto
+inner join Beneficiario as b on pgto.NIS = b.NIS group by(b.NIS)) as mean;
