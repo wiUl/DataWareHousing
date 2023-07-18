@@ -1,0 +1,4 @@
+total de beneficiarios que receberam BF e AB em qualquer momento do tempo(nao necessariamente concomitantemente)
+select count(*) from
+(select DISTINCT p.NIS  from Pagamento p where p.tipo_auxilio ='Bolsa Familia') as ab left join 
+(select DISTINCT p.NIS  from Pagamento p where p.tipo_auxilio ='Auxilio Brasil') as bf on ab.NIS = bf.NIS where bf.NIS is not null;
