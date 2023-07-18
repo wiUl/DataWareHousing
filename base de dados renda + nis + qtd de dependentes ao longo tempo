@@ -1,0 +1,5 @@
+Base de dados renda, NIS, qtd_dep ao longo do tempo
+select b.Qtd_Dependentes+1 as pessoas_na_familia, pgto.* from  
+(select sum(p.Valor) as renda, p.NIS, p.mes, p.ano  from Pagamento p 
+group by p.NIS, p.mes, p.ano) as pgto inner join
+Beneficiario b on pgto.NIS = b.NIS order by mes,ano ;
