@@ -1,6 +1,8 @@
 # DataWareHousing — consultas SQL sobre programas sociais
 
-Conjunto de **9 consultas SQL** sobre pagamentos de programas de transferência de renda (**Bolsa Família**, **Auxílio Brasil** e **BPC**), desenvolvido como trabalho de faculdade na **UFRJ** em julho de 2023.
+Conjunto de **9 consultas SQL** sobre pagamentos de programas de transferência de renda (**Bolsa Família**, **Auxílio Brasil** e **BPC**), desenvolvido como trabalho de faculdade na **UFRJ** (consultas versionadas em julho de 2023).
+
+Os dados são de **dados abertos do governo federal**; o portal e o endereço de download não estão registrados no repositório.
 
 O repositório contém apenas as consultas. Não inclui os dados, o esquema do banco nem os resultados das execuções.
 
@@ -41,10 +43,10 @@ Agregações (`COUNT`, `SUM`, `AVG`), `GROUP BY`, `DISTINCT`, subconsultas, `INN
 - Os arquivos não têm extensão `.sql`.
 - As consultas não foram executadas nesta documentação, pois o repositório não contém os dados.
 
-## Pendente de confirmação
+## Informações não registradas
 
-- Disciplina e ano acadêmico do trabalho.
-- Origem dos dados e esquema completo do banco.
+- Disciplina e período acadêmico do trabalho.
+- Portal de origem dos dados e esquema completo do banco.
 
 ## Autor
 
